@@ -1,0 +1,122 @@
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin: 2vw;
+    padding: 0;
+    background: linear-gradient(to right, #f7f9fc, #eef3f9);
+    color: #333;
+}
+
+h1,
+h4,
+h5 {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/*Align the top section with name, personal details and contact information */
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 5vw;
+    background-color: #f0f4f8;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Name style */
+.name {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.job-title {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 30%;
+    background-color: #4a90e2;
+    border: 1px solid #4a90e2;
+    margin: 0;
+}
+
+.word {
+    font-size: 18px;
+    color: #4a90e2;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Personal details */
+
+.bold-text {
+    font-weight: 600;
+}
+
+/* Contact details */
+
+.icon {
+    width: 15px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 24px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.body-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.left-side {
+    flex: 1;
+    min-width: 350px;
+}
+
+.divider {
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 15px;
+}
+
+.bottom-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.bottom-container>section {
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}

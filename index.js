@@ -32,15 +32,15 @@ function displayLocation(latitude, longitude) {
 }
 
 function displayWeather(latitude, longitude) {
-  const API_KEY = "19b057c596269678ef73a8d3e9ff550b";
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
+    `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&daily=temperature_2m_min,temperature_2m_max
+`
   )
     .then((response) => response.json())
     .then((data) => {
-      degrees.innerHTML = `${data.main.temp}°C`;
-      maxDegrees.innerHTML = `${data.main.temp_max}°C`;
-      minDegrees.innerHTML = `${data.main.temp_min}°C`;
-      description.innerHTML = data.weather[0].description;
+      console.log(data);
+      degrees.innerHTML = `${data.current_weather.temperature}°C`;
+      maxDegrees.innerHTML = `${data.daily.temperature_2m_max[0]}°C`;
+      minDegrees.innerHTML = `${data.daily.temperature_2m_min[0]}°C`;
     });
 }

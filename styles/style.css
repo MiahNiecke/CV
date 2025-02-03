@@ -125,8 +125,7 @@ hr {
 
 #degrees,
 #min-degrees,
-#max-degrees,
-#description {
+#max-degrees {
   color: #004080;
   font-weight: normal;
 }

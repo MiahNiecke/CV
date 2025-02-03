@@ -38,7 +38,6 @@ function displayWeather(latitude, longitude) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       degrees.innerHTML = `${data.current_weather.temperature}°C`;
       maxDegrees.innerHTML = `${data.daily.temperature_2m_max[0]}°C`;
       minDegrees.innerHTML = `${data.daily.temperature_2m_min[0]}°C`;

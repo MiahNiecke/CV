@@ -2,6 +2,7 @@ const location = document.getElementById("location");
 const degrees = document.getElementById("degrees");
 const maxDegrees = document.getElementById("max-degrees");
 const minDegrees = document.getElementById("min-degrees");
+const description = document.getElementById("description");
 
 window.onload = displayWeatherAndLocation();
 
@@ -32,7 +33,8 @@ function displayLocation(latitude, longitude) {
 
 function displayWeather(latitude, longitude) {
   fetch(
-    `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&daily=temperature_2m_min,temperature_2m_max`
+    `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&daily=temperature_2m_min,temperature_2m_max
+`
   )
     .then((response) => response.json())
     .then((data) => {
